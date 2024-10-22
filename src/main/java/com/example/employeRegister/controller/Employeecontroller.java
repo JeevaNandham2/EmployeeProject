@@ -77,6 +77,7 @@ public class Employeecontroller {
 
         return ResponseEntity.ok(employees);
     }
+    //*--------------- ALL EMPLOYEE -----------*//
 
     @GetMapping("/employees")
     public ResponseEntity<Page<Employee>> getAllEmployees(
