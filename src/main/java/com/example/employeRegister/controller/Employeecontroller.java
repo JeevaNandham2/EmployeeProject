@@ -58,7 +58,7 @@ public class Employeecontroller {
         return ResponseEntity.ok(updatedEmployee);
     }
 
-    // Get employees with pagination and search by name
+    // Get employees with pagination and search by name----//
     @GetMapping("/employees/search")
     public ResponseEntity<Page<Employee>> searchEmployees(
             @RequestParam(required = false) String name,
@@ -77,6 +77,7 @@ public class Employeecontroller {
 
         return ResponseEntity.ok(employees);
     }
+    //*--------------- ALL EMPLOYEE -----------*//
 
     @GetMapping("/employees")
     public ResponseEntity<Page<Employee>> getAllEmployees(
